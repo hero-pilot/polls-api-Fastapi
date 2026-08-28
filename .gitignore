@@ -1,0 +1,257 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (not directly relevant, but common)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff (not directly relevant)
+instance/
+.webassets-cache
+
+# Scrapy stuff (not directly relevant)
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+site/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# IDEs and Editors
+# VS Code
+.vscode/
+*.code-workspace
+
+# Visual Studio Code (user-specific)
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-snippets
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.nerdtree
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# OS / Fedora / Linux
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+*.bak
+*.tmp
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+# Data volumes (if mounted locally)
+postgres_data/
+redis_data/
+pgadmin_data/
+minio_data/
+
+# Redis
+dump.rdb
+appendonly.aof
+*.rdb
+*.aof
+
+# PostgreSQL
+*.sql
+*.dump
+*.backup
+pg_log/
+pg_xlog/
+pg_replslot/
+pg_stat_tmp/
+postgresql.conf.local
+pg_hba.conf.local
+
+# Application specific
+# FastAPI / app logs
+logs/
+*.log
+*.pid
+
+# Alembic (if using) - migrations are usually tracked, but if you have auto-generated files
+# You might want to track migrations, so comment this if needed
+alembic/versions/*.py
+
+# Coverage and test reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+
+# Secrets / sensitive data
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+.secrets/
+secrets/
+config/local.yml
+config/development.yml
+config/production.yml
+.env.local
+.env.*.local
+
+# Node / frontend (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Terraform (if using)
+*.tfstate
+*.tfstate.*
+.terraform/
