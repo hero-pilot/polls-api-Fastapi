@@ -1,4 +1,6 @@
 from pydantic import BaseModel, Field
+from starlette import status
+from fastapi.exceptions import HTTPException
 import uuid
 from typing import List
 from datetime import datetime, timezone
@@ -19,7 +21,12 @@ class PollRequest(BaseModel):
                 ) for index , i in enumerate(self.options)
             ]
             if self.expires_at is not None and self.expires_at < datetime.now(timezone.utc):
-                 raise ValueError("expiration date must be in the future.")
+                 raise HTTPException(
+                      status_code=status.HTTP_400_BAD_REQUEST,
+                      detail="expiration date must be in the future."
+                      )
+    
+            
             return PollResponse(options=choices, expires_at=self.expires_at, title=self.title)
 
 class PollResponse(PollRequest):
