@@ -3,10 +3,7 @@ from fastapi import status
 from app.models import PollRequest, PollResponse
 
 
-@app.post("/polls", status_code= status.HTTP_201_CREATED, response_model=PollResponse)
+@app.post("/polls", status_code= status.HTTP_201_CREATED)
 def create_poll(poll: PollRequest):
-    return PollResponse(
-        title= poll.title, 
-        options= poll.options,
-        expires_at= poll.expires_at
-    )
+    new_poll = poll.create_poll()
+    return {"detail": "Poll created successfully", "poll_id": new_poll.id}
