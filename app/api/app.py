@@ -7,3 +7,5 @@ from app.models import PollRequest, PollResponse
 def create_poll(poll: PollRequest):
     new_poll = poll.create_poll()
     return {"detail": "Poll created successfully", "poll_id": new_poll.id}
+
+
