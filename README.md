@@ -1,0 +1,1 @@
+After learning more about pydantic, i wanted to make a project with it and somehow decided to do a polls api with fastapi and redis as the db, I don't know what i was high on, perhaps copium. Anyways now it's dropped :(
